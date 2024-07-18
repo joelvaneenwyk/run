@@ -1,1 +1,3 @@
-# run
+# Run 🏃
+
+Utility for launching commands.
