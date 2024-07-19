@@ -1,0 +1,11 @@
+version: "0.2"
+ignorePaths: []
+dictionaryDefinitions:
+  - name: run
+    path: .github/config/cspell-run.dict
+    addWords: true
+dictionaries:
+  - run
+words: []
+ignoreWords: []
+import: []
