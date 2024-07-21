@@ -66,3 +66,13 @@ pnpm-lock.yaml
 package-lock.json
 
 .yarn/
+
+.vscode/
+node_modules/
+*.log*
+.DS_Store
+coverage/
+dist/
+types/
+.conf*
+# bun.lockb
