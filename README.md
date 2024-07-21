@@ -21,7 +21,7 @@
 
 nypm, detects package manager type and version and converts command into package manager CLI arguments. It then uses corepack or proper command to execute package manager's command and download it if necessary.
 
-```
+```ansi
   +------------------------------------------------+
   |                nypm                            |
   +------------------------------------------------+
@@ -116,7 +116,6 @@ Installs project dependencies.
 ### `removeDependency(name, options)`
 
 Removes dependency from the project.
-
 
 <!-- AUTOMD_END -->
 
