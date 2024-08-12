@@ -43,7 +43,7 @@
     "ufo": "^1.5.3"
   },
   "devDependencies": {
-    "@types/node": "^20.14.10",
+    "@types/node": "^22.2.0",
     "@vitest/coverage-v8": "^1.6.0",
     "automd": "^0.3.8",
     "changelogen": "^0.5.5",
