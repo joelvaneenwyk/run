@@ -129,14 +129,32 @@ Removes dependency from the project.
 
 ## Related Projects
 
-NYPM is inspired from previous attempts and projects for unifying package manager exeperience.
+NYPM is inspired from previous attempts and projects for unifying package manager experience. Below are some notable alternatives and how they compare:
 
-- [pi0/yarnpm](https://github.com/pi0/yarnpm)
-- [unjs/lmify](https://github.com/unjs/lmify)
-- [antfu/ni](https://github.com/antfu/ni)
-- [antfu/install-pkg](https://github.com/antfu/install-pkg)
-- [egoist/dum](https://github.com/egoist/dum)
-- [nodejs/corepack](https://github.com/nodejs/corepack)
+### Similar Package Manager Wrappers
+
+- **[antfu/ni](https://github.com/antfu/ni)** - A popular CLI tool that provides unified commands (`ni`, `nr`, `nu`, etc.) for npm/yarn/pnpm/bun. Unlike nypm which focuses on programmatic API usage, ni is primarily designed for interactive CLI usage with shorter commands.
+
+- **[egoist/dum](https://github.com/egoist/dum)** - An npm scripts runner that automatically detects and uses the right package manager. Similar goal to nypm but focused on running scripts rather than package management operations.
+
+- **[antfu/install-pkg](https://github.com/antfu/install-pkg)** - Programmatic package installer that auto-detects package managers. More focused specifically on installation, while nypm provides a broader API for multiple package management operations.
+
+### Related Tools & Inspirations
+
+- **[nodejs/corepack](https://github.com/nodejs/corepack)** - Official Node.js tool for managing package manager versions. Nypm leverages corepack when available to ensure the correct package manager version is used.
+
+- **[pi0/yarnpm](https://github.com/pi0/yarnpm)** - Early experiment in unifying npm/yarn interfaces. Served as inspiration for nypm's approach to package manager abstraction.
+
+- **[unjs/lmify](https://github.com/unjs/lmify)** - Lock file management and conversion tool. Complementary to nypm, focusing on lockfile operations rather than package management commands.
+
+### Key Differences
+
+**nypm** stands out by:
+- Providing a **complete programmatic API** for use in tools and scripts
+- **Auto-detecting and auto-installing** the correct package manager version via corepack
+- Supporting **workspace operations** across all package managers
+- Offering both **CLI and API interfaces** with the same functionality
+- Maintaining a **minimal implementation** while supporting npm, yarn, pnpm, and bun
 
 ## License
 
